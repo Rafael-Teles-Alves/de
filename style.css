@@ -66,7 +66,7 @@ main {
     justify-content: center;
     padding-top: 100px;
     padding-bottom: 30px;
-    color: #fff;
+    color: #111111;
 }
 #p {
     border-bottom: 2px solid rgb(83, 38, 38);
@@ -88,9 +88,15 @@ main {
 .desc {
     text-align: start;  
     padding: 10px;
-    margin-left: 20px;
+    margin-left: 40px;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
+    
+}
+.cont-bnt-venda {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }
 .bnt-whats {
     padding: 10px;
