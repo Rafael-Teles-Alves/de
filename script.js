@@ -1,8 +1,18 @@
-const btnMobile = document.getElementById('bnt-mobile-menu');
+var imgAtual ="baner2.png";
+var imgAnterior ="baner3.png";
+var imginicio = "baner1.png";
 
-function toggleMenu(){
-    const nav = document.getElementById('nav');
-    nav.classList.toggle('active');
+function prox(){
+    document.getElementById('img-troca').src=imgAtual;
+    let aux = imgAtual;
+    imgAtual = imgAnterior;
+    imgAnterior = imginicio;
+    imginicio = aux;
 }
-
-btnMobile.addEventListener('click', toggleMenu);
+function vol(){
+    document.getElementById('img-troca').src=imgAnterior;
+    let aux = imgAnterior;
+    imgAnterior = imgAtual;
+    imgAtual = imginicio;
+    imginicio = aux;
+}
