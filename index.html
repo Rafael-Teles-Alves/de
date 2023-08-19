@@ -1,199 +1,122 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="logo.jpeg" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <title>Atelier Primavera</title>
+  <title>Atelier Primavera</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="logo.jpeg" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #e2e2e2;
+  }
+  </style>
 </head>
 <body>
-    <header>
-        <div id="conteiner-titulo">
-            <nav id="nav">
-                <ul id="menu">
-                    <li><a href="https://api.whatsapp.com/send?phone=5511998702674&text=Oi Cintia Como Faço Para Alugar ?" target="_blank">
-                        <img id="incon" src="whatsapp.png" alt="icon whatsapp">
-                        WhatsApp</a>
-                    </li>
-                    <li><a href="#quemsomos">
-                        <img id="incon" src="quem-somos.png" alt="icon whatsapp">
-                        Quem Somos</a>
-                    </li>
-                    <li><a href="#galeria">
-                        <img id="incon" src="foto.png" alt="icon whatsapp">
-                        Galeria</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <div id="conteiner">
-            <h1 id="h1-ini">🎉 Transforme sua festa em um evento inesquecível! 🎊</h1>
-            <div class="slideshow-container"> 
-                    <img class="img-baner" id="img-troca"src="baner1.png" alt="aluga decoração e mesas e cadeiras">
-            </div>
-                <a class="prev"  onclick="prox();">&#10094;</a>
-                <a class="next"  onclick="vol();">&#10095;</a>
-            <div id="corpo-p">
-                <div id="p"></div>
-            </div>
-            <article>
-                <div id="corp-galeria">
-                    <h3>Trabalhos</h3>
-                </div>
-                <div class="gallery">
-                    <div class="gallery-item">
-                        <img src="1.png" alt="Descrição da imagem">
-                        <p class="desc">
-                            ✅ Eventos Pessoais<br>
-                            ✅ Eventos Corporativo<br>
-                            ✅ Feiras<br>
-                            ✅ Palestras<br>
-                            📱 Orçamento via Whatsapp<br>
-                            </p>
-                        <div class="cont-bnt-venda">
-                            <a class="bnt-whats" href="https://api.whatsapp.com/send?phone=5511998702674&text=Oi Cintia Como Faço Para Alugar ?">WhatsApp</a>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="decora.png" alt="Descrição da imagem">
-                        <p class="desc">
-                            $ Melhor Preço $ <br>
-                            💦 Material entregue limpo<br>
-                            🪑 Ótimos estado de conservação<br>
-                            🚚 Entrega No Local<br>
-                            📱 Orçamento via Whatsapp<br>
-                        </p>
-                        <div class="cont-bnt-venda">
-                            <a class="bnt-whats" href="https://api.whatsapp.com/send?phone=5511998702674&text=Oi Cintia Como Faço Para Alugar ?">WhatsApp</a>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="items-persona.png" alt="Descrição da imagem">
-                        <p class="desc">
-                            Lembrancinhas Feitas em E.V.A<br>
-                            🏅 Melhor Preço 🏅<br>
-                            ⭐ Melhor avaliação<br>
-                            🚚 Entrega No Local<br>
-                            📱 Orçamento via Whatsapp<br>
-                        </p>
-                        <div class="cont-bnt-venda">
-                            <a class="bnt-whats" href="https://api.whatsapp.com/send?phone=5511998702674&text=Oi Cintia Como Faço Para Comprar ?">WhatsApp</a>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="mesa.jpeg" alt="Descrição da imagem">
-                        <p class="desc">
-                            🪑Locação de Mesas e Cadeiras 🪑<br>
-                            🚚 Entrega No Local<br>
-                            💦 Material Limpo<br>
-                            💸 Melhor preço<br>
-                            📱 Orçamento via Whatsapp<br>
-                        </p>
-                        <div class="cont-bnt-venda">
-                            <a class="bnt-whats" href="https://api.whatsapp.com/send?phone=5511998702674&text=Oi Cintia Como Faço Para Alugar ?">WhatsApp</a>
-                        </div>
-                    </div>
-                </div>
-                <!--inicia galeria-->
-                <div id="corpo-p">
-                    <div id="p">Galeria</div>
-                    <section id="galeria"></section>
-                </div>  
-                <!--galeria fotos inicio-->
-                <div class="gallery2">
-                    <div class="gallery-item2">
-                        <img src="lembrancinhas-de-eva-01.webp" alt="Imagem 1">
-                        <div class="overlay2">Faça Seu Pedido</div>
-                    </div>
-                    <div class="gallery-item2">
-                        <img src="locacao-de-mesas-e-cadeiras03.jpg" alt="Imagem 2">
-                        <div class="overlay2">Faça Seu Pedido</div>
-                    </div>
-                    <div class="gallery-item2">
-                        <img src="maxresdefault02.jpg" alt="Imagem 3">
-                        <div class="overlay2">Faça Seu Pedido</div>
-                    </div>
-                    <div class="gallery-item2">
-                        <img src="05.png" alt="Imagem 1">
-                        <div class="overlay2">Faça Seu Pedido</div>
-                    </div>
-                    <div class="gallery-item2">
-                        <img src="06.png" alt="Imagem 2">
-                        <div class="overlay2">Faça Seu Pedido</div>
-                    </div>
-                    <div class="gallery-item2">
-                        <img src="Captura de tela4.png" alt="Imagem 3">
-                        <div class="overlay2">Faça Seu Pedido</div>
-                    </div>
-                    <div class="gallery-item2">
-                        <img src="Captura de tela 2023-07-15 233922.png" alt="Imagem 2">
-                        <div class="overlay2">Faça Seu Pedido</div>
-                    </div>
-                    <div class="gallery-item2">
-                        <img src="images.jpg" alt="Imagem 1">
-                        <div class="overlay2">Faça Seu Pedido</div>
-                    </div>
-                    <div class="gallery-item2">
-                        <img src="06.png" alt="Imagem 3">
-                        <div class="overlay2">Faça Seu Pedido</div>
-                    </div>
-                    <div class="gallery-item2">
-                        <img src="07.png" alt="Imagem 1">
-                        <div class="overlay2">Faça Seu Pedido</div>
-                    </div>
-                    <div class="gallery-item2">
-                        <img src="09.png" alt="Imagem 2">
-                        <div class="overlay2">Faça Seu Pedido</div>
-                    </div>
-                    <div class="gallery-item2">
-                        <img src="08.png" alt="Imagem 3">
-                        <div class="overlay2">Faça Seu Pedido</div>
-                    </div>
-                </div><!--galeria fotos fim-->    
-            </article>
-            <article id="arti-quemsomos">
-                <div id="div-quem">
-                    <div id="conte-titulo">
-                        <h3 id="titu-que">Quem Somos</h3>
-                    </div>
-                    <!--@-->
-                    <div id="conte-arti">
-                        <section id="quemsomos"></section>
-                        <div class="cont-quem-titu">
-                            <h4 class="h4">Bem-vindo ao AtelierPrimavera, onde a alegria ganha vida e celebrações se tornam inesquecíveis!</h4>
-                        </div>
-                        <p class="p-quem-desc"> 
-                            Com mais de 3 anos de experiência no mercado, 
-                            somos especialistas em aluguel de mesas e cadeiras, 
-                            mas isso é apenas o começo da nossa jornada encantadora.
-                        </p>
-                    </div>
-                    <div class="cont-quem-titu">
-                        <h4 class="h4" >Uma História de Encantamento e Sorrisos</h4>
-                    </div>
-                    <p class="p-quem-desc" > 
-                        Há mais de três anos, 
-                        embarcamos em uma missão para criar experiências mágicas e momentos de pura diversão. 
-                        Com nossas camas elásticas, suas festas e eventos ganharão um salto de alegria, 
-                        e nossas piscinas de bolinhas mergulharão todos os convidados em um mar de diversão. Desde o início, 
-                        nosso objetivo tem sido fazer sorrir, encantar e proporcionar memórias preciosas para todas as idades,
-                        com nossas decoração personalizadas podendo trazer um ambiente dos seus sonhos. 
-                    </p>
-                </div>
-            </article>
-            <footer>
-                <div  id="corpo-p">
-                    <div style="color: aliceblue;">De Onde Nós Somos</div>
-                </div>  
-                <p id="p-footer">Somos De Cajamar</p>
-                <p id="p-footer">Entre Em Contato Para saber Mais</p>
-                <span id="span">Todos Os Direitos Reservados A ©atelierprimavera</span>
-            </footer>
-        </div>
-    </main>
-    <script src="script.js"></script>
+<div class="p-5 bg-primary text-white text-center">
+  <h1>Atelier Primavera</h1>
+  <p>🎉 Transforme Sua Festa Em Um Evento Inesquecível! 🎉</p> 
+</div>
+<!--menu-->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="javascript:void(0)">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">facebook</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">Instagram</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">Contato</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search">
+          <button class="btn btn-primary" type="button">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--Fim menu-->
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>Atelier Primavera</h2>
+      <h5>Uma História de Encantamento e Sorrisos:</h5>
+      <div class="fakeimg">
+        <img src="05.png" alt="logo da empresa" style="width: 100%; height: 100%;" >
+      </div>
+      <p class="p-quem-desc" > 
+        Há mais de três anos, 
+        embarcamos em uma missão para criar experiências mágicas e momentos de pura diversão. 
+        Com nossas camas elásticas, suas festas e eventos ganharão um salto de alegria, 
+        e nossas piscinas de bolinhas mergulharão todos os convidados em um mar de diversão. Desde o início, 
+        nosso objetivo tem sido fazer sorrir, encantar e proporcionar memórias preciosas para todas as idades,
+        com nossas decoração personalizadas podendo trazer um ambiente dos seus sonhos. 
+    </p>
+      <h3 class="mt-4">Links da Loja</h3>
+      <p>link para comprar alguns produtos.</p>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Mercado Livre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Shoope</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Elo7</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Loja da Ana</a>
+        </li>
+      </ul>
+      <hr class="d-sm-none">
+    </div>
+    <!--referente a mesa e cadeiras-->
+    <div class="col-sm-8">
+      <h2>Mesas e Cadeiras</h2>
+      <h5>🪑Locação de Mesas e Cadeiras 🪑</h5>
+      <div class="fakeimg">
+        <img src="mesa.jpeg" alt="mesas e cadeiras" style="width: 100%; height: 100%;">
+      </div>
+      <p>🚚 Entrega No Local Ou Retira. 🚚</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <!--referente a decoração-->
+      <h2 class="mt-5">Decoração</h2>
+      <h5>Lembrancinhas Feitas Personalizadas</h5>
+      <div class="fakeimg">
+        <img src="lembrancinhas-de-eva-01.webp" alt="decoração da festa" style="width: 100%; height: 100%;">
+      </div>
+      <p>⭐ Melhor avaliação</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <!--referente a brinquedos-->
+      <h2 class="mt-5">Brinquedos</h2>
+      <h5>🚚 Entrega No Local e Montamos 🚚</h5>
+      <div class="fakeimg">
+        <img src="Captura de tela4.png" alt="img de picina de bolinhas" style="width: 100%; height: 100%;">
+      </div>
+      <p> 🚚 Entrega No Local 🚚</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+</div>
+<!--footer-->
+<div class="mt-5 p-4 bg-dark text-white text-center">
+    <div  id="corpo-p">
+        <div style="color: aliceblue;">De Onde Nós Somos</div>
+    </div>  
+    <p id="p-footer">Somos De Cajamar</p>
+    <p id="p-footer">Entre Em Contato Para saber Mais</p>
+    <span id="span">Todos Os Direitos Reservados A ©atelierprimavera</span>
+</div>
 </body>
-</html> 
+</html>
